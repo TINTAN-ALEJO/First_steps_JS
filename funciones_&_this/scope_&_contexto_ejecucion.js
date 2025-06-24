@@ -59,6 +59,7 @@ function agregar_producto() { //Se inicia un contexto local
     }
     function agregar_producto3(){//Se inicia un contexto local
         const producto3 = "mantequilla"; // Variable local
+        //lista_de_compras.push(producto2); // En este caso se intenta acceder a la variable local producto2, pero no existe en este contexto, por lo que se genera un error.
         lista_de_compras.push(producto3); // Acceso a la variable global y se agrega otro producto
     }
     agregar_producto2(); // Llamada a la función que agrega otro producto
