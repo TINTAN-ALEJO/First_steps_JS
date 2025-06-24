@@ -32,3 +32,9 @@ console.log("Temperaturas en grados Fahrenheit: ", celsiusTemperatures)
 
 //PRÁCTICA forEach()
 //Crear un programa que tome los numeros de un array como input y calcule la suma de todos los elementos.
+
+console.log("________________________________________");
+
+const numbersToSum = [1, 2, 3, 4, 5]
+let sum = 0
+
