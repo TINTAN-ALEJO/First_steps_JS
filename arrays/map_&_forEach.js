@@ -38,3 +38,9 @@ console.log("________________________________________");
 const numbersToSum = [1, 2, 3, 4, 5]
 let sum = 0
 
+numbersToSum.forEach(num => {
+    sum += num //Se usa el método forEach para iterar sobre cada elemento del array y sumar su valor a la variable sum
+})
+
+console.log("La suma de los números es: ", sum)
+
