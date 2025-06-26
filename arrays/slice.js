@@ -5,3 +5,7 @@
 const animals = ['Lion', 'Tiger', 'Elephant', 'Giraffe', 'Zebra', 'Monkey', 'Bear', 'Wolf', 'Fox', 'Deer', 'Rabbit', 'Squirrel', 'Hedgehog', 'Otter', 'Panda'];
 
 console.log(animals.slice(2 , 8)); // Se usa el método slice para obtener una copia de los elementos desde el índice 2 hasta el índice 8 (sin incluir el elemento en el índice 8).
+
+console.log(animals.slice(0 , 3));
+console.log(animals.slice(-2)); //Toma el ultimo elemento como el inicio del array e imprime los ultimos 2 elementos del array.
+console.log(animals.slice(3 , -1)); // Inicia desde el indice 3 y finaliza en el penúltimo elemento sin tomarlo en cuenta.
