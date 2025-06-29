@@ -39,3 +39,23 @@ console.log("Nombre del perro: ", perrito3.nombre, ", Edad: ", perrito3.edad, "a
 perrito1.adoptado = "si";
 perrito2.callejero = "no";
 perrito3.castrado = true;
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// Sintaxis más moderna para crear las funciones constructoras que en este caso ya son llamadas clases y se usan las palabras reservadas "Class" y "Constructor".
+
+//Realizamos el mismo ejemplo pero con la sintaxis moderna:
+
+class nuevo_perrito {
+    constructor(nombre,edad,raza){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.raza = raza;
+    }
+    
+}
+
+const nuevo_perrito1 = new nuevo_perrito ("Zeus", 2 , "Pitbull");
+console.log(nuevo_perrito1);
+console.log(nuevo_perrito1.nombre);
+
