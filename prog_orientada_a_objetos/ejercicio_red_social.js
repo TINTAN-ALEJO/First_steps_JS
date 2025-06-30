@@ -10,15 +10,15 @@ Requerimientos del reto:
 
 const usersDatabase = [
   {
-    username: "andres",
+    username: "Andres",
     password: "123",
   },
   {
-    username: "caro",
+    username: "Caro",
     password: "456",
   },
   {
-    username: "mariana",
+    username: "Mariana",
     password: "789",
   },
   {
@@ -46,7 +46,7 @@ const usersTimeline = [
   },
 ];
 
-const username = prompt("Ingrese usuario").toLowerCase();
+const username = prompt("Ingrese usuario (La primera letra debe estar en Mayusculas");
 const password = prompt("Ingrese contraseña");
 
 function user_exist (username, password){
@@ -54,18 +54,41 @@ function user_exist (username, password){
         if (
             usersDatabase[i].username === username && usersDatabase[i].password === password
         ){
-           return true;
+          console.log(`¡ ${username} Bienvenido/a !`);
+          return true;
         }
-    } 
+    }
+    console.log("Usuario no encontrado, ingrese con otro usuario y contraseña");
     return false;
 }
 
-function sign_in (username,password){
-    if (username,password){
-       alert(`Bienvenido/a: ${username}`);
-    }else{
-        alert("Usuario o contraseña incorrectos");
+function timeline_exist (username){
+  for(const user_timeline of usersTimeline){
+    if (user_timeline.username === username){
+      return console.log(`Timeline: ${user_timeline.timeline}`);
     }
+  }
+  return console.log("usuario sin timeline");
 }
 
-sign_in(username,password);
+user_exist(username, password);
+
+timeline_exist(username);
+
+////////////////////////////////////////////////////////////////////////
+
+// // Misma validación del usuario y contraseña pero usando FOR OF (Mi primera opción) 
+
+// function user_exist(username,password){
+//   for (const user of usersDatabase){
+//     if (user.username === username && user.password === password){
+//       console.log(`¡ ${user.username} Bienvenido/a !`);
+//       return true;
+//     }
+
+//   }
+//       console.log("Usuario no encontrado, ingrese con otro usuario y contraseña");
+//       return false;
+// }
+
+// user_exist(username, password);
