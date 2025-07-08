@@ -1,0 +1,20 @@
+#contentArea {
+    background-color: antiquewhite;
+    color: blueviolet;
+    width: 400px;
+    align-content: center;
+    justify-items: center; 
+}
+
+.list {
+    width: 400px;
+}
+
+#listArea {
+    list-style:disc;
+    width: 400px;
+    align-content: center;
+    justify-items: center;
+    margin: 0;
+    padding: 20px 0;
+}
