@@ -48,3 +48,41 @@ contentArea.after(newElement3);//Se inyecta o se agrega el nuevo elemento
 // After: Convierte al elemento en el hermano del elemento referenciado (Pero DESPUÉS).
 // Prepend: Lo agrega como hijo (Pero al inicio).
 // Append: Lo agrega como hijo al final.
+
+//--------------------------------------------------
+//Eliminar elementos
+
+listArea.removeChild(listArea.lastChild);//Elimina el último elemento de la lista
+
+listArea.removeChild(listArea.firstChild);//Elimina el primer elemento de la lista
+
+listArea.removeChild(listArea.children[2]);//Elimina el elemento que se especifica entre corchetes
+
+
+//--------------------------------------------------
+//Clonar elementos
+
+const contentArea1 = document.getElementById("contentArea1");
+
+const listArea1 = document.getElementById("listArea1");
+listArea1.insertAdjacentHTML("beforeend", "<li>item 5</li>");
+listArea1.removeChild(listArea1.children[2]);
+
+const originalElement = contentArea1.querySelector("p"); //Selecciona el elemento con etiqueta P dentro del contenedor padre (contentArea1) y se almacena en una constante
+
+const clonedElement = originalElement.cloneNode(true);//Se clona el elemento P anteriormente seleccionado y se almacena en una constante (cloneNode debe ir con true para poder que se cumpla la clonación)
+
+clonedElement.textContent = "Elemento clonado";//Se cambia el valor del elemento clonado
+
+contentArea1.append(clonedElement);//Se inserta el elemento clonado al DOM
+
+
+//Reemplazar elementos
+
+const clonedElement2 = originalElement.cloneNode(true)//Se clona un segundo elemento y se almacena
+
+clonedElement2.textContent = "Elemento clonado 2";//Se cambia el valor del elemento clonado
+
+const itemToReplace = listArea1.children[1];//Selecciona el elemento 2 de la lista de items y se almacena en una constante
+
+itemToReplace.replaceWith(clonedElement2);//Se reemplaza el elemento 2 de la lista por el elemento anteriormente clonado
