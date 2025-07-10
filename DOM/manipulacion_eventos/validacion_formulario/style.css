@@ -1,0 +1,22 @@
+#myForm{
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn{
+    display: grid;
+    justify-self: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-weight: 800;    
+}
+
+input{
+    height: 20px;
+    width: 50vw;
+}
