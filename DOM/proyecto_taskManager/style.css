@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 0;
+}
+
+#task-manager {
+  background: #fff;
+  padding: 20px;
+  margin: auto;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#task-form {
+  margin-bottom: 20px;
+}
+
+#task-input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#task-list li {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#task-list li .btn-container {
+    display: flex;
+    padding: 0 10px;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+#task-list li .delete-btn {    
+  cursor: pointer;
+  color: red;
+}
+
+#task-list li .edit-btn {    
+  cursor: pointer;
+  color: blue;
+  font-weight: 600;
+
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme #task-manager {
+  background: #222;
+  color: #fff;
+}
+
+.dark-theme #task-list li {
+  background: #444;
+}
