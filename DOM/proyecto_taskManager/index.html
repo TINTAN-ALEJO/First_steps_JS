@@ -9,23 +9,24 @@
 </head>
 
 <body>
-  <div id="theme-toggle">
-    <button id="toggle-theme-btn">Toggle Theme</button>
-  </div>
-  <div id="task-manager">
-    <h1>Task Manager</h1>
+  
+  <div id="task-manager">    
+      <div id="theme-toggle"> 
+        <h1>Task Manager</h1>  
+        <!-- Rounded switch -->
+        <!-- <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label> -->
+        <button id="toggle-theme-btn">Dark mode</button>
+      </div>
+
     <form id="task-form">
       <input type="text" id="task-input" placeholder="Enter a new task" required>
-      <button type="submit">Add Task</button>
+      <input type="date" id="task-date" required>
+      <button type="submit" id="task-button">Add Task</button>
     </form>
-    <ul id="task-list">
-      <!-- <li>
-        Task Content
-        <div class="btn-container">
-        <span class="delete-btn">Delete</span>
-        <span class="edit-btn">Edit</span>
-        </div>
-      </li> -->
+    <ul id="task-list">    
     </ul>
   </div>
   <script src="app.js"></script>
