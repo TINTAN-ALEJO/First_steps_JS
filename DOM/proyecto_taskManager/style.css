@@ -5,15 +5,6 @@ body {
   margin: 0;
 }
 
-#toggle-theme-btn{
-  background-color: #222;
-  color: #fff;
-  border-radius: 5px;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -94,6 +85,13 @@ input:checked + .slider:before {
   justify-content: space-between;
 }
 
+#task-manager #theme-toggle .switch-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 #task-form {
   display: flex;
   justify-content: center;
@@ -105,10 +103,15 @@ input:checked + .slider:before {
 #task-input {
   padding: 10px;
   width: 50%;
+  border-radius: 5px;
+  border: #471396 solid 1px;
 }
 
-#task-date{
+#task-date{  
+  padding: 10px;
   width: 25%;
+  border-radius: 5px;
+  border: #471396 solid 1px;
 }
 
 #task-form #task-button{
@@ -125,27 +128,49 @@ input:checked + .slider:before {
   background-color: #2e0d5f;
 }
 
+.task-header{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 #task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 #task-list li {
   display: flex;
-  justify-content: space-between;
   color: #252525;
-  background: #eee;
+  justify-content: space-between;
   padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  
+  border-radius: 5px;  
+  border: #471396 solid 1px;
+}
+
+#task-list li .task-text{
+  display: flex;
+  padding: 0 10px;
+  margin: 0;
+  width: 45%;
+}
+
+#task-list li .task-date{
+  display: flex;
+  padding: 0 10px;
+  margin: 0;
+  width: 35%;
 }
 
 #task-list li .btn-container {
-    display: flex;
-    padding: 0 10px;
-    flex-direction: row-reverse;
-    gap: 20px;
+  display: flex;
+  padding: 0 10px;
+  flex-direction: row-reverse;
+  gap: 20px;
 }
 
 #task-list li .delete-btn {    
@@ -174,6 +199,7 @@ body.dark-theme {
 .dark-theme #task-list li {
   background: #333;
   color: #fff;
+  border: #fff solid 1px;
 }
 
 .dark-theme #task-list li .edit-btn {      
@@ -182,4 +208,12 @@ body.dark-theme {
 
 .dark-theme #task-list li .delete-btn {    
   color: rgb(245, 23, 23);
+}
+
+.dark-theme #task-input {
+  border: #fff solid 1px;
+}
+
+.dark-theme #task-date{
+  border: #fff solid 1px;
 }

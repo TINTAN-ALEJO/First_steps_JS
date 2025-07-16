@@ -14,18 +14,23 @@
       <div id="theme-toggle"> 
         <h1>Task Manager</h1>  
         <!-- Rounded switch -->
-        <!-- <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label> -->
-        <button id="toggle-theme-btn">Dark mode</button>
+         <div class="switch-container">
+          <p id="switch-status">Dark Mode 🌚</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
       </div>
 
     <form id="task-form">
-      <input type="text" id="task-input" placeholder="Enter a new task" required>
-      <input type="date" id="task-date" required>
-      <button type="submit" id="task-button">Add Task</button>
+        <input type="text" id="task-input" placeholder="Enter a new task" required>
+        <input type="date" id="task-date" required>
+        <button type="submit" id="task-button">Add Task</button>
     </form>
+
+    <h2 class="task-header">Tasks</h2>
+
     <ul id="task-list">    
     </ul>
   </div>
