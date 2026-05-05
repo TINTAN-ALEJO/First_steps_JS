@@ -14,7 +14,7 @@ if (edad >= 18) {
 // Ejemplo de estructura condicional IF con ELSE IF
 console.log("____________________________________________");
 console.log("Ejemplo de estructura condicional IF con ELSE IF");
-const calificacion = 81;
+const calificacion = 82;
 
 if (calificacion >= 90) {
     console.log("Excelente");
@@ -37,10 +37,10 @@ const a = 5;
 const b = 10;
 
 if (a < b && a > 0) {
-    console.log("True: (a) es menor que (b) y (a) es mayor que 0");
+    console.log("True: (a) es menor que (b) y (a) es mayor que 0"); // Se ejecutará porque ambas condiciones son verdaderas
 }
 
 if (a > b || a < 0) {
-    console.log("True: (a) es mayor que (b) o (a) es menor que 0");
+    console.log("True: (a) es mayor que (b) o (a) es menor que 0"); // No se ejecutará porque ambas condiciones son falsas
 }
 
