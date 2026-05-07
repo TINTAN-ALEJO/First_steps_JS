@@ -64,7 +64,7 @@ function agregar_producto() { //Se inicia un contexto local
     }
     agregar_producto2(); // Llamada a la función que agrega otro producto
     agregar_producto3(); // Llamada a la función que agrega otro producto    
-    return `lista de compras actualizada: ${lista_de_compras}`;
+    return `lista de compras actualizada: ${lista_de_compras}`;// Se accede a la variable global y se retorna la lista de compras actualizada
 }
 
 console.log(agregar_producto()); // Llamada a la función que imprime la lista de compras actualizada
