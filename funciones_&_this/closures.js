@@ -50,7 +50,7 @@ const closureA = outer()
 const closureB = outer()
 
 closureA("Alice")
-closureA("Bob")
+closureB("Bob")
 
 // EJEMPLO 1:
 console.log("________________________________________________");
