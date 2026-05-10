@@ -68,4 +68,4 @@ for (let i = 0; i < numbersArray.length; i++) {
   sum += numbersArray[i]
 }
 
-console.log(sum)
+console.log(`La suma de los elementos del array es: ${sum}`)
