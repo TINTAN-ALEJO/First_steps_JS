@@ -4,7 +4,7 @@
 // map()
 
 const numbers = [1, 2, 3, 4, 5]
-const squaredNumbers = numbers.map(num => num * num)
+const squaredNumbers = numbers.map(num => num * num)//Se usa el método map para crear un nuevo array con los números al cuadrado. El array original no se modifica, por lo tanto, numbers sigue siendo [1, 2, 3, 4, 5] y squaredNumbers es [1, 4, 9, 16, 25].
 
 console.log(numbers)
 console.log(squaredNumbers)
@@ -24,11 +24,11 @@ console.log(iteratedColors) //Este valor es undefined porque forEach no devuelve
 console.log("________________________________________");
 
 const fahrenheitTemperatures = [32, 50, 68, 86, 104]
-const celsiusTemperatures = fahrenheitTemperatures.map(f => 5 / 9 * (f - 32)); //Se usa el método map para crear un nuevo array con las temperaturas convertidas a Celsius
+const celsiusTemperatures = fahrenheitTemperatures.map(fahrenheit => (5 / 9) * (fahrenheit - 32)); //Se usa el método map para crear un nuevo array con las temperaturas convertidas a Celsius
 
 
 console.log("Temperaturas en grados Fahrenheit: ", fahrenheitTemperatures)
-console.log("Temperaturas en grados Fahrenheit: ", celsiusTemperatures)
+console.log("Temperaturas en grados Celsius: ", celsiusTemperatures)
 
 //PRÁCTICA forEach()
 //Crear un programa que tome los numeros de un array como input y calcule la suma de todos los elementos.
@@ -42,5 +42,6 @@ numbersToSum.forEach(num => {
     sum += num //Se usa el método forEach para iterar sobre cada elemento del array y sumar su valor a la variable sum
 })
 
-console.log("La suma de los números es: ", sum)
+console.log("Números a sumar: ", numbersToSum)
+console.log("La suma de los números es:", sum)
 
