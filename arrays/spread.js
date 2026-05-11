@@ -18,7 +18,7 @@ const array_combinado = [...array1,...array2]; //combina los arrays
 
 console.log(array_combinado);
 
-//3. Crear arreglos con elementos adicionales
+//3. Crear arrays con elementos adicionales
 
 const array_original = ["Fútbol", "baloncesto", "voleibol"];
 const array_insertar = [...array_original, "natación", "tenis"]; //copia el array original y le inserta los nuevos elementos
@@ -28,11 +28,11 @@ console.log(array_insertar);
 //4. Pasar elementos o parámetros a las funciones
 
 function sum (a, b, c){
-    return a * b * c;
+    return a + b + c;
 }
 
 //sum (1,2,3) Forma normal de pasar datos a una función
 const datos = [2, 9, 14];
-const resultado = sum(...datos); //Entregar los parámetros solicitados a la función por medio de un array y el operador spread
+const resultado = sum(...datos); //Entregar los parámetros solicitados a la función por medio de un array y el operador spread (separa los elementos del array para pasarlos como argumentos individuales a la función)
 
 console.log(resultado);
