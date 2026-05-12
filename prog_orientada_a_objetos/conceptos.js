@@ -7,7 +7,7 @@ propiedades y métodos
 propiedades: se pueden interpretar como las "Características" de un objeto.
 key / value
 
-métodos: son funciones que nos dicta las interacciones o acciones que va a realizar un objeto.
+métodos: son funciones que nos dictan las interacciones o acciones que va a realizar un objeto.
 
 
 objeto {
@@ -21,7 +21,7 @@ objeto {
 
 */
 
-const nueva_moto ={
+const nueva_moto = {
     marca: "Honda",
     modelo: "2025",
     linea: {
@@ -29,13 +29,13 @@ const nueva_moto ={
         cilindraje: "500"
     },
     valor: 20000000,
-    venta: function(){
-        console.log(`Se han vendido 785: ${this.marca}, modelo ${this.modelo}`)
+    venta() {
+        console.log(`Se han vendido 785 motos de marca: ${nueva_moto.marca}, modelo ${nueva_moto.modelo}`)
     }
 }
 
 console.log(nueva_moto);
-console.log(nueva_moto.linea, nueva_moto.linea); //Se acceden a las propiedades del objeto
+console.log(nueva_moto.linea.linea_moto, "-", nueva_moto.linea.cilindraje); //Se acceden a las propiedades del objeto
 nueva_moto.venta(); //Se invoca método del objeto
 
 
@@ -49,4 +49,6 @@ console.log(nueva_moto);
 console.log(nueva_moto.version); //Imprime la nueva propiedad del objeto
 nueva_moto.ingresos_taller(); //Llama o invoca el nuevo método del objeto
 
-// delete nueva_moto.version; //Forma de eliminar una propiedad o un método de un objeto
+delete nueva_moto.version; //Forma de eliminar una propiedad o un método de un objeto
+console.log(nueva_moto.version); //Imprime undefined, ya que se eliminó la propiedad del objeto
+console.log(nueva_moto); //Imprime el objeto sin la propiedad "version"
