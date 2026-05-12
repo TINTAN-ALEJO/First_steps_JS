@@ -36,7 +36,7 @@ console.log("Nombre del perro: ", perrito3.nombre, ", Edad: ", perrito3.edad, "a
 
 //Agregar propiedades individuales
 
-perrito1.adoptado = "si";
+perrito1.adoptado = "si";//Agregamos una nueva propiedad a la instancia perrito1, esta propiedad solo quedará visible para esta instancia y no para las otras instancias creadas a partir de la función constructora.
 perrito2.callejero = "no";
 perrito3.castrado = true;
 
